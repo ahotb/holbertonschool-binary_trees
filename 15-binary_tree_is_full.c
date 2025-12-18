@@ -17,9 +17,9 @@ return (1);
 
 /* Node with both children */
 if (tree->left && tree->right)
-return (binary_tree_is_full(tree->left) &&
-        binary_tree_is_full(tree->right));
+return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 
 /* Node with only one child */
 return (0);
 }
+
