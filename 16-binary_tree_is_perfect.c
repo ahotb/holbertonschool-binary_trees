@@ -37,10 +37,9 @@ return (1);
 /* Node with both children */
 if (tree->left && tree->right)
 {
-/* Check recursively left and right subtrees AND heights must be equal */
 if (binary_tree_height(tree->left) == binary_tree_height(tree->right))
 return (binary_tree_is_perfect(tree->left) &&
-        binary_tree_is_perfect(tree->right));
+binary_tree_is_perfect(tree->right));
 }
 
 /* Node with one child only */
