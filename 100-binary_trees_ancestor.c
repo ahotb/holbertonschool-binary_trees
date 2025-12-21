@@ -6,7 +6,8 @@
  *
  * Return: pointer to the lowest common ancestor, or NULL
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+const binary_tree_t *second)
 {
 const binary_tree_t *a;
 const binary_tree_t *b;
@@ -19,7 +20,7 @@ b = second;
 while (b)
 {
 if (a == b)
-return ((binary_tree_t *)a);
+return ((binary_tree_t *) a);
 b = b->parent;
 }
 a = a->parent;
